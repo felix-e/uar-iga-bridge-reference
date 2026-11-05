@@ -5,10 +5,10 @@ identity governance and administration (IGA). This is **not a historical runner*
 a production integration, an approved policy or evidence of any historical campaign.
 All example identifiers and inputs are fabricated. No private source or review data is included.
 
-![The review crosses several systems; the handoffs still need owners](docs/images/whiteboard-03m45s-v1.png)
+![A bridge from the current review to IGA—not a completed migration](docs/images/intro-redacted-x115-03m46s-v1.png)
 
 Companion article: [Bridging UAR to IGA](https://iam.felixelliott.com/posts/bridging-uar-to-iga/).
-[Media provenance](docs/media-provenance.json) records the author-selected original-intro frame.
+[Media provenance](docs/media-provenance.json) records the author-selected frame from the redacted, sped-up introduction export.
 
 ## What is implemented
 

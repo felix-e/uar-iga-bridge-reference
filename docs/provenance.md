@@ -8,7 +8,7 @@ The example checks the whole supplied catalogue, including unused entries. That 
 
 ## Media
 
-The author selected the whiteboard introduction and authorised publication of a separate cropped still at 03:45 of `uar-workbook-intro.mp4`. The original remains unchanged and private. Only the derivative is included. Its file hash, decoded frame, presentation timestamp and crop are in [media-provenance.json](media-provenance.json). The same derivative is used by the companion article. This image illustrates the existing system's moving parts; it does not prove execution or migration.
+The author superseded the earlier original-intro selection with **03:46 of `uar-workbook-intro-redacted-x1.15.mp4`**, using that edited export's own timeline (226 seconds). The source export and original recordings remain unchanged and private. Only a separate cropped still is included. Its source hash, decoded frame, actual presentation timestamp and crop are in [media-provenance.json](media-provenance.json); no timeline translation or final-frame substitution was used. The same derivative is used by the companion article. The earlier still is retained as a historical asset. This bridge drawing is explanatory, not proof of execution or migration.
 
 ## Publication and licensing
 
