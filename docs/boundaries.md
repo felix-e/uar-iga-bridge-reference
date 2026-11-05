@@ -1,5 +1,7 @@
 # Control boundaries — illustrative, not operational
 
+The catalogue, routing and receipt discussion below describes the synthetic Python example and its proposed evidence model, not an execution result from the PowerShell books.
+
 Catalogue validation precedes candidate routing. A blocked run returns no candidate
 list; no partial candidates are published. A missing mapping, dynamic mapping,
 unknown classification or duplicate mapping requires correction, not a default.
@@ -33,6 +35,4 @@ revocation state calculation or execution is implemented here.
 
 WORKBOOK prepares data **and writes work tables**. STAGEBOOK promotes prepared
 work. MAILBOOK handles notification. TESTBOOK concerns tagged **live smoke**
-activity. These conceptual boundaries come from the task brief, not inspection of
-historical source. The offline suite neither runs these books nor reproduces their
-storage, promotion, delivery, target access or live-smoke effects.
+activity. The root PowerShell files are sanitised derivatives of the historical macOS books, retained for structural inspection. See [their sanitisation and dependency limits](books.md). The Python offline suite neither runs them nor reproduces their storage, promotion, delivery, target access or live-smoke effects. Static parsing of a book does not prove the historical workflow ran successfully.

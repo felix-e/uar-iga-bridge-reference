@@ -1,16 +1,18 @@
-# Bridging UAR to IGA — SYNTHETIC ONLY
+# Bridging UAR to IGA
 
-A newly authored, offline Python reference for user access review (UAR) and
-identity governance and administration (IGA). This is **not a historical runner**,
-a production integration, an approved policy or evidence of any historical campaign.
-All example identifiers and inputs are fabricated. No private source or review data is included.
+Two distinct references for user access review (UAR) and identity governance and administration (IGA):
+
+- **Sanitised historical PowerShell books:** structure-preserving derivatives for inspection, not execution. Their step order, functions and SQL show the historical design; environment values and execution defaults have been deliberately changed.
+- **Synthetic offline Python example:** independently authored catalogue, routing, comparison and preview logic with fabricated inputs and tests.
+
+Neither is a production integration, an approved policy or evidence of a completed campaign. No private Git history, real review population, credentials or operational output is included.
 
 ![A bridge from the current review to IGA—not a completed migration](docs/images/intro-redacted-x115-03m46s-v1.png)
 
 Companion article: [Bridging UAR to IGA](https://iam.felixelliott.com/posts/bridging-uar-to-iga/).
 [Media provenance](docs/media-provenance.json) records the author-selected frame from the redacted, sped-up introduction export.
 
-## What is implemented
+## Synthetic Python example — implemented offline
 
 - Validate the entire role catalogue before candidate routing: reject missing,
   duplicate (even identical), conflicting and dynamic/unspecified mappings.
@@ -51,19 +53,18 @@ lists are empty. The remove preview contains only `account-002/entitlement-002`.
 Tests exercise positive and blocking cases, membership differences despite equal
 totals, entitlement changes, reviewer drift, exact scope filtering and self-review.
 
-## Historical book boundaries — conceptual only
+## Sanitised historical books — inspect, do not run
 
-| Book | Conceptual responsibility supplied in the brief |
+| File | Historical responsibility |
 | --- | --- |
-| WORKBOOK | Prepares data **and writes work tables**; not merely a read-only report. |
-| STAGEBOOK | Promotes prepared work into the review stage. |
-| MAILBOOK | Handles notification. |
-| TESTBOOK | Tagged **live smoke** activity; not equivalent to this offline test suite. |
+| [WORKBOOK.ps1](WORKBOOK.ps1) | Validate input, write work tables and generate a review pack. |
+| [STAGEBOOK.ps1](STAGEBOOK.ps1) | Promote prepared work into staging and review items. |
+| [MAILBOOK.ps1](MAILBOOK.ps1) | Preview, queue, send and verify notifications. |
+| [TESTBOOK.ps1](TESTBOOK.ps1) | Create tagged live smoke-test records, exercise paths and clean up. |
 
-These are conceptual distinctions, not a reconstructed call graph or verified
-historical behaviour. This reference does not implement any of those runners.
-See [boundaries](docs/boundaries.md) for decision/remediation separation and
-[provenance](docs/provenance.md) for authorship and evidence limits.
+These complete derivatives come from the macOS variants, not the Windows variants. They preserve the historical structure but deliberately block full-file execution. They are **not runnable integrations**: helpers, schemas, configuration and real input data are absent. Copying a fragment past the guard does not make it safe to run.
+
+Read [sanitisation, dependencies and validation](docs/books.md), [book provenance](docs/books-provenance.json), [control boundaries](docs/boundaries.md) and [publication provenance](docs/provenance.md).
 
 ## Proposed IGA acceptance checklist
 
@@ -85,9 +86,8 @@ Before any separately authorised real implementation:
 
 ## Evidence limits
 
-No network, database, tenant, mail or credential access occurs. There are no
-external dependencies, network libraries, database drivers, real addresses,
-credentials or execute switches. Tests prove only these local synthetic behaviours;
-they do not establish historical exactness, production correctness, revocation,
-notification delivery, or completeness of real governance controls.
-Remediation receipts are documented only, not implemented or validated in code.
+The Python example has no network, database, tenant, mail or credential access, external dependencies or execute mode. Its tests prove only the local synthetic behaviours described above.
+
+The PowerShell files retain historical command and SQL structure for inspection. They contain deliberate execution guards and synthetic configuration, but are not a sandbox: extracted fragments can still be dangerous if retargeted. Only parsing and static checks were performed; no book or integration was run. Missing helpers are not silently replaced with successful stubs.
+
+Neither set of checks establishes production correctness, notification delivery, campaign approval, completed remediation, successful IGA migration or complete governance coverage. Remediation receipts are documented, not implemented or validated in code.

@@ -1,0 +1,67 @@
+{
+  "formatVersion": 1,
+  "classification": "Sanitised historical derivatives; reference only",
+  "sourceRevision": "1caf69a65308eb47cf2382360c964e4abf8d13fd",
+  "sourceRevisionVerification": "Parent verified local source HEAD and each original file's working-tree/Git bytes against the recorded SHA-256 before publication. No original history is included.",
+  "rights": "Operator explicitly confirmed author publication rights for the four original scripts. No new licence grant or ownership claim is made.",
+  "intendedPublicLayout": {
+    "books": "repository root",
+    "README.md": "docs/books.md",
+    "provenance.json": "docs/books-provenance.json",
+    "validate-static.ps1": "tools/validate-books.ps1 (repository-root paths adapted for public use)"
+  },
+  "differences": [
+    "Prepended unconditional initial throw and reference-only notice; historical bodies retained in full.",
+    "Replaced environment database names, hosts, IP, tenant/cycle UUIDs, mailbox, account and internal application labels with consistent synthetic values. Hosts and auth-resource URL use .invalid; IP uses TEST-NET-1.",
+    "Replaced absolute local input/tool paths and historical run-folder example with repository-relative synthetic paths; redacted historical repository references to neutral labels.",
+    "Replaced role examples/descriptions and source-row annotations with synthetic examples; retained generic SQL domain vocabulary, table/column definitions, warnings and inconsistencies.",
+    "Renamed internal review-application display labels, test datasource/tag/account prefixes and associated URL variable consistently.",
+    "Set all Execute*, Allow*, replacement and create-item mutation opt-in initial values false. Explanatory instructions describing true opt-ins remain historical text, not permission.",
+    "Normalised text to UTF-8/LF. No source blocks, helpers, populations, sessions, configurations or history copied beyond the four script bodies."
+  ],
+  "dependencies": "Not included: ops Python/SQL/PowerShell helpers, mail module/runners/templates/config template, input CSVs, run artefacts, credentials, sqlcmd, Python environment and PowerShell mail modules. No credentials are included.",
+  "limitations": [
+    "Reference only, not operational; never execute books, selections, imports or dot-sourcing. The initial throw does not protect manually selected later blocks.",
+    "Historical WORKBOOK includes unconditional mutation call sites and interactive modification choices without Execute switches; they are retained for fidelity behind the initial throw.",
+    "Static PowerShell parsing and structure comparison are not SQL-engine validation, runtime testing, security certification or a licence grant.",
+    "Source revision and byte hashes identify the inspected local snapshot; static checks used no network, authentication or live integration. They do not establish a historical execution result."
+  ],
+  "books": [
+    {
+      "source": "WORKBOOK-mac.ps1",
+      "sourceSha256": "4c00737324de17c3695fb28ea85adc449a094003d4f50cb1f3ae617aba9c6e98",
+      "derivative": "WORKBOOK.ps1",
+      "derivativeSha256": "943914d5e2f4eed492b97ada37de9b0e22307e2faff409b990d6fa51d75c38e2",
+      "functionCount": 3,
+      "stepCount": 13,
+      "sqlShapeCount": 17
+    },
+    {
+      "source": "STAGEBOOK-mac.ps1",
+      "sourceSha256": "890835d078e9ca90fe514a6cc46a641c7598f143c7891abe6bf2f42caa0408a5",
+      "derivative": "STAGEBOOK.ps1",
+      "derivativeSha256": "122051648483ef005cc41450e1219fe70c8d4884a8413501f3fc96ba8e9405f6",
+      "functionCount": 10,
+      "stepCount": 12,
+      "sqlShapeCount": 5
+    },
+    {
+      "source": "MAILBOOK-mac.ps1",
+      "sourceSha256": "38e9352b630b63efeedb73b38aa8dea5e0d21507d22fb9acf54ff949eea1b190",
+      "derivative": "MAILBOOK.ps1",
+      "derivativeSha256": "e47f50a2ef64fd60a05cdfc946881b2f189a154c9c741ee1ed3e842c981937da",
+      "functionCount": 8,
+      "stepCount": 9,
+      "sqlShapeCount": 6
+    },
+    {
+      "source": "TESTBOOK-mac.ps1",
+      "sourceSha256": "4512a98291965e35b6464c59b1ebb3b8e1bbdf9c921c9917c30feaf2d8fe06dc",
+      "derivative": "TESTBOOK.ps1",
+      "derivativeSha256": "8b5a6927b20b8f99be5b9ff638012c4b54bc0f8f32f2325b48a5f73075ebb2ae",
+      "functionCount": 4,
+      "stepCount": 10,
+      "sqlShapeCount": 9
+    }
+  ]
+}
