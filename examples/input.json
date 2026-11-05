@@ -1,0 +1,86 @@
+{
+  "catalogue": [
+    {
+      "application_id": "app-demo",
+      "entitlement_id": "entitlement-001",
+      "mapping_type": "static",
+      "classification": "Elevated",
+      "owner_id": "owner-001"
+    },
+    {
+      "application_id": "app-demo",
+      "entitlement_id": "entitlement-002",
+      "mapping_type": "static",
+      "classification": "Privileged",
+      "delegate_id": "delegate-001"
+    }
+  ],
+  "population": [
+    {
+      "application_id": "app-demo",
+      "account_id": "account-001",
+      "entitlement_id": "entitlement-001",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "subject_id": "subject-001",
+      "manager_id": "manager-001",
+      "manager_active": true
+    },
+    {
+      "application_id": "app-demo",
+      "account_id": "account-002",
+      "entitlement_id": "entitlement-002",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "subject_id": "subject-002",
+      "manager_id": "manager-002",
+      "manager_active": true
+    }
+  ],
+  "current": [
+    {
+      "application_id": "app-demo",
+      "account_id": "account-001",
+      "entitlement_id": "entitlement-001",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "reviewer_id": "manager-001"
+    },
+    {
+      "application_id": "app-demo",
+      "account_id": "account-002",
+      "entitlement_id": "entitlement-002",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "reviewer_id": "delegate-001"
+    }
+  ],
+  "decisions": [
+    {
+      "application_id": "app-demo",
+      "account_id": "account-001",
+      "entitlement_id": "entitlement-001",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "subject_id": "subject-001",
+      "reviewer_id": "manager-001",
+      "action": "retain"
+    },
+    {
+      "application_id": "app-demo",
+      "account_id": "account-002",
+      "entitlement_id": "entitlement-002",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "subject_id": "subject-002",
+      "reviewer_id": "delegate-001",
+      "action": "remove"
+    }
+  ],
+  "preview_scope": {
+    "action": "remove",
+    "tag": "tag-demo",
+    "cycle": "cycle-001",
+    "application_id": "app-demo"
+  }
+}

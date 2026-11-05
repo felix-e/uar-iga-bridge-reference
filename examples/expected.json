@@ -1,0 +1,42 @@
+{
+  "synthetic_only": true,
+  "candidates": [
+    {
+      "application_id": "app-demo",
+      "account_id": "account-001",
+      "entitlement_id": "entitlement-001",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "reviewer_id": "manager-001",
+      "route": "manager"
+    },
+    {
+      "application_id": "app-demo",
+      "account_id": "account-002",
+      "entitlement_id": "entitlement-002",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "reviewer_id": "delegate-001",
+      "route": "delegate"
+    }
+  ],
+  "comparison": {
+    "current_count": 2,
+    "proposed_count": 2,
+    "removed": [],
+    "added": [],
+    "reviewer_drift": [],
+    "matches": true
+  },
+  "notification_preview": [
+    {
+      "application_id": "app-demo",
+      "account_id": "account-002",
+      "entitlement_id": "entitlement-002",
+      "tag": "tag-demo",
+      "cycle": "cycle-001",
+      "reviewer_id": "delegate-001",
+      "action": "remove"
+    }
+  ]
+}

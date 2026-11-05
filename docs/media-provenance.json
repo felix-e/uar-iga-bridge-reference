@@ -1,0 +1,20 @@
+{
+  "sourceFilename": "uar-workbook-intro.mp4",
+  "sourceSha256": "145a9c829d45b09324d7eafebc4b633f4a1b610d1b8df63de2b7bb9e8cb56264",
+  "selectionAuthority": "Author confirmed whiteboard intro after comparing original intro and Desktop technical recording; 225 seconds applies to this file, not shortened/redacted exports.",
+  "requestedSeconds": 225,
+  "decodedFrameIndexZeroBased": 6750,
+  "actualPresentationTimestampSeconds": "225.000000",
+  "decodedFrames": 7802,
+  "durationSeconds": "260.066667",
+  "cropPixels": {
+    "x": 200,
+    "y": 160,
+    "width": 1140,
+    "height": 880
+  },
+  "derivativeFilename": "whiteboard-03m45s-v1.png",
+  "derivativeSha256": "9795b137f59b89b8737dd55e7f8520c496e02e4da083d1f0f6caebf371706412",
+  "metadata": "PNG critical chunks only; no source metadata, text, EXIF or ICC copied",
+  "redaction": "No sensitive identifiers visible in selected crop; interface and unrelated canvas excluded. No content replacement needed."
+}
